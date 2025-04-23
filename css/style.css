@@ -206,7 +206,7 @@ nav ul li a.active {
 }
 
 .hero {
-    background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), url('/api/placeholder/1920/600') no-repeat center center/cover;
+    background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), url('../img/Untitled\ design.png') no-repeat center center/cover;
     color: white;
     text-align: center;
     padding: 150px 0 100px;
@@ -437,7 +437,7 @@ nav ul li a.active {
 }
 
 .contact-hero {
-    background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), url('/api/placeholder/1920/400') no-repeat center center/cover;
+    background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), url('../img/Untitled\ design.png') no-repeat center center/cover;
 }
 
 .map-container {
@@ -856,7 +856,7 @@ footer {
 }
 
 .vp-hero {
-    background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)), url('../img/truck-hero.jpg') center/cover;
+    background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)), url('../img/Untitled\ design.png') center/cover;
     color: white;
     padding: 150px 0 100px;
     margin-top: 85px;
