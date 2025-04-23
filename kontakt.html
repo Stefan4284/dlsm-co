@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - TechSolutions</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.png" alt="TechSolutions Logo">
+                <h1>Tech<span>Solutions</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="index.html#usluge">Usluge</a></li>
+                    <li><a href="index.html#o-nama">O nama</a></li>
+                    <li><a href="index.html#projekti">Projekti</a></li>
+                    <li><a href="kontakt.html" class="active">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero contact-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Stupite u kontakt sa nama</h1>
+                <p>Pošaljite nam poruku ili posetite našu kancelariju</p>
+            </div>
+        </div>
+    </section>
+    <section id="kontakt" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Kontaktirajte nas</h2>
+                <p>Javite nam se sa pitanjima, predlozima ili započnite projekat</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Informacije</h3>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Adresa</h4>
+                            <p>Omladinska bb, Modriča, Bosna i Hercegovina</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telefon</h4>
+                            <p>+387 063 050 316</p>
+                            <p>+387 065 843 936</p>
+                            <p>+387 066 740 049</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@techsolutions.com</p>
+                            <p>podrska@techsolutions.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Radno vreme</h4>
+                            <p>Ponedeljak - Petak: 9:00 - 17:00</p>
+                            <p>Subota: 10:00 - 14:00</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Pošaljite nam poruku</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Ime i prezime</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email adresa</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Broj telefona</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Tema</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Izaberite temu</option>
+                                <option value="general">Opšta pitanja</option>
+                                <option value="support">Tehnička podrška</option>
+                                <option value="sales">Prodaja i ponude</option>
+                                <option value="partnership">Saradnja</option>
+                                <option value="other">Ostalo</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Poruka</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="agreement" name="agreement" required>
+                            <label for="agreement">Slažem se sa uslovima korišćenja i politikom privatnosti</label>
+                        </div>
+                        <button type="submit" class="btn">Pošalji poruku</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="lokacija" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Naša lokacija</h2>
+                <p>Možete nas posetiti na sledećoj adresi</p>
+            </div>
+            <div class="map-container">
+                <img src="img/mapa.png" alt="Mapa lokacije" class="map-image">
+                <div class="map-overlay">
+                    <h3>TechSolutions</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Omladinska bb, Modriča, Bosna i Hercegovina</p>
+                    <a href="#" class="btn-small">Dobij direkcije</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="faq" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Često postavljana pitanja</h2>
+                <p>Odgovori na najčešća pitanja naših klijenata</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Kako započeti saradnju sa vama?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Saradnju možete započeti slanjem upita putem kontakt forme na našem sajtu, slanjem emaila na info@techsolutions.com ili pozivom na +381 11 123 4567. Nakon inicijalnog kontakta, organizovaćemo sastanak kako bismo razumeli vaše potrebe i predložili optimalno rešenje.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Koliko traje razvoj jednog projekta?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Vreme razvoja projekta zavisi od njegove složenosti i obima. Manji projekti obično traju 1-2 meseca, dok složeniji projekti mogu trajati 6-12 meseci. Tokom inicijalnog sastanka ćemo vam dati precizniju procenu vremena potrebnog za vaš specifični projekat.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Da li pružate usluge održavanja nakon završetka projekta?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Da, pružamo usluge održavanja i podrške za sve projekte koje razvijemo. Nudimo različite pakete održavanja prilagođene vašim potrebama, od osnovnog održavanja do potpunog upravljanja sistemom 24/7.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Koje tehnologije koristite u razvoju?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Koristimo širok spektar modernih tehnologija, uključujući React, Angular, Vue.js za frontend razvoj, Node.js, Python, Java, .NET za backend razvoj, Flutter i React Native za mobilne aplikacije, kao i razne cloud servise poput AWS, Azure i Google Cloud za hostovanje i infrastrukturu.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Da li radite i za klijente iz inostranstva?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Da, radimo sa klijentima iz celog sveta. Imamo iskustva u internacionalnoj saradnji i prilagođavamo se različitim vremenskim zonama kako bismo obezbedili efikasnu komunikaciju i saradnju.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="newsletter" class="section bg-dark">
+        <div class="container">
+            <div class="newsletter-container">
+                <div class="newsletter-content">
+                    <h2>Pretplatite se na naš newsletter</h2>
+                    <p>Budite u toku sa najnovijim vestima, tehnološkim trendovima i našim uslugama</p>
+                </div>
+                <div class="newsletter-form">
+                    <form id="newsletterForm">
+                        <input type="email" placeholder="Vaša email adresa" required>
+                        <button type="submit" class="btn">Pretplatite se</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Tech<span>Solutions</span></h2>
+                    <p>Vaš partner za digitalnu transformaciju</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Brzi linkovi</h3>
+                    <ul>
+                        <li><a href="index.html">Početna</a></li>
+                        <li><a href="index.html#usluge">Usluge</a></li>
+                        <li><a href="index.html#o-nama">O nama</a></li>
+                        <li><a href="index.html#projekti">Projekti</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Kontaktirajte nas</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Omladinska bb, Modriča, Bosna i Hercegovina</p>
+                    <p><i class="fas fa-phone"></i> +387 063 050 316</p>
+                    <p><i class="fas fa-envelope"></i> info@techsolutions.com</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Pratite nas</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TechSolutions. Sva prava zadržana.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                const answer = item.querySelector('.faq-answer');
+                const toggle = item.querySelector('.faq-toggle');
+                question.addEventListener('click', () => {
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                            otherItem.querySelector('.faq-answer').style.maxHeight = null;
+                            otherItem.querySelector('.faq-toggle i').className = 'fas fa-plus';
+                        }
+                    });
+                    item.classList.toggle('active');
+                    if (item.classList.contains('active')) {
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                        toggle.innerHTML = '<i class="fas fa-minus"></i>';
+                    } else {
+                        answer.style.maxHeight = null;
+                        toggle.innerHTML = '<i class="fas fa-plus"></i>';
+                    }
+                });
+            });
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('Vaša poruka je uspešno poslata! Odgovorićemo u najkraćem mogućem roku.');
+                    contactForm.reset();
+                });
+            }
+            const newsletterForm = document.getElementById('newsletterForm');
+            if (newsletterForm) {
+                newsletterForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('Uspešno ste se pretplatili na naš newsletter!');
+                    newsletterForm.reset();
+                });
+            }
+        });
+    </script>
+</body>
+</html>

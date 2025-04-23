@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSolutions - Vozni park</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.png" alt="TechSolutions Logo">
+                <h1>Tech<span>Solutions</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="vp.html" class="active">Vozni park</a></li>
+                    <li><a href="index.html#kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="vp-hero">
+        <div class="container">
+            <div class="vp-hero-content">
+                <h1>Naš vozni park</h1>
+                <p>Moderni kamioni za sve vrste transportnih potreba</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="vp-section">
+        <div class="container">
+            <div class="vp-grid">
+                <!-- Kamion 1 -->
+                <div class="vp-truck-card">
+                    <div class="vp-image-box">
+                        <img src="img/truck1.jpg" alt="Mercedes Actros">
+                        <span class="vp-badge vp-badge-available">Dostupan</span>
+                    </div>
+                    <div class="vp-truck-info">
+                        <h3>Mercedes Actros 2545</h3>
+                        <div class="vp-specs">
+                            <div class="vp-spec-item">
+                                <i class="fas fa-engine"></i>
+                                <span>12.8L (450 KS)</span>
+                            </div>
+                            <div class="vp-spec-item">
+                                <i class="fas fa-weight-hanging"></i>
+                                <span>24.000 kg</span>
+                            </div>
+                            <div class="vp-spec-item">
+                                <i class="fas fa-ruler-combined"></i>
+                                <span>13.6m x 2.5m</span>
+                            </div>
+                            <div class="vp-spec-item">
+                                <i class="fas fa-boxes"></i>
+                                <span>82m³</span>
+                            </div>
+                        </div>
+                        <button class="vp-details-btn">Specifikacije</button>
+                    </div>
+                </div>
+
+                <!-- Kamion 2 -->
+                <div class="vp-truck-card">
+                    <div class="vp-image-box">
+                        <img src="img/truck2.jpg" alt="Volvo FH16">
+                        <span class="vp-badge vp-badge-unavailable">Zauzet</span>
+                    </div>
+                    <div class="vp-truck-info">
+                        <h3>Volvo FH16 750</h3>
+                        <div class="vp-specs">
+                            <div class="vp-spec-item">
+                                <i class="fas fa-engine"></i>
+                                <span>16.1L (750 KS)</span>
+                            </div>
+                            <div class="vp-spec-item">
+                                <i class="fas fa-weight-hanging"></i>
+                                <span>32.000 kg</span>
+                            </div>
+                            <div class="vp-spec-item">
+                                <i class="fas fa-ruler-combined"></i>
+                                <span>16.5m x 2.6m</span>
+                            </div>
+                            <div class="vp-spec-item">
+                                <i class="fas fa-boxes"></i>
+                                <span>100m³</span>
+                            </div>
+                        </div>
+                        <button class="vp-details-btn">Specifikacije</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Tech<span>Solutions</span></h2>
+                    <p>Vaš partner za digitalnu transformaciju</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Brzi linkovi</h3>
+                    <ul>
+                        <li><a href="#pocetna">Početna</a></li>
+                        <li><a href="#usluge">Usluge</a></li>
+                        <li><a href="#o-nama">O nama</a></li>
+                        <li><a href="#projekti">Projekti</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Kontaktirajte nas</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Omladinska bb, Modriča</p>
+                    <p><i class="fas fa-phone"></i> +387 063 050 316</p>
+                    <p><i class="fas fa-envelope"></i> info@techsolutions.com</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Pratite nas</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TechSolutions. Sva prava zadržana.</p>
+            </div>
+        </div>
+    </footer>
+    <div class="vp-modal">
+    </div>
+    <script>
+            document.addEventListener('DOMContentLoaded', function() {
+        const modal = document.querySelector('.vp-modal');
+        const detailButtons = document.querySelectorAll('.vp-details-btn');
+        
+        const trucksData = {
+            'Mercedes Actros 2545': {
+                engine: '12.8L (450 KS)',
+                weight: '24.000 kg',
+                dimensions: '13.6m x 2.5m',
+                volume: '82m³',
+                additionalInfo: 'Euro 6 motor, AdBlue tehnologija, GPS praćenje, Aktivni sistem kočenja'
+            },
+            'Volvo FH16 750': {
+                engine: '16.1L (750 KS)',
+                weight: '32.000 kg',
+                dimensions: '16.5m x 2.6m',
+                volume: '100m³',
+                additionalInfo: 'I-Shift transmisija, Dynamic Steering, ACC sa stop-go funkcijom'
+            }
+        };
+
+        detailButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const truckCard = this.closest('.vp-truck-card');
+                const truckName = truckCard.querySelector('h3').textContent;
+                const specs = trucksData[truckName];
+                
+                const modalContent = `
+                    <div class="modal-content">
+                        <span class="close-modal">&times;</span>
+                        <h2>${truckName}</h2>
+                        <div class="modal-specs">
+                            <p><strong>Motor:</strong> ${specs.engine}</p>
+                            <p><strong>Nosivost:</strong> ${specs.weight}</p>
+                            <p><strong>Dimenzije:</strong> ${specs.dimensions}</p>
+                            <p><strong>Zapremina:</strong> ${specs.volume}</p>
+                            <p><strong>Dodatne informacije:</strong> ${specs.additionalInfo}</p>
+                        </div>
+                    </div>
+                `;
+                
+                modal.innerHTML = modalContent;
+                modal.style.display = 'block';
+                modal.style.opacity = '1';
+                
+                const closeBtn = modal.querySelector('.close-modal');
+                closeBtn.onclick = closeModal;
+                
+                window.onclick = function(event) {
+                    if (event.target === modal) {
+                        closeModal();
+                    }
+                };
+            });
+        });
+
+        function closeModal() {
+            modal.style.opacity = '0';
+            setTimeout(() => {
+                modal.style.display = 'none';
+            }, 300);
+        }
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape' && modal.style.display === 'block') {
+                closeModal();
+            }
+        });
+    });
+    </script>
+</body>
+</html>
